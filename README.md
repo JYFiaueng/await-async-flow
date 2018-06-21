@@ -16,20 +16,20 @@ npm install await-async-flow
 ### Example
 ```
 const async = require('await-async-flow');
-const sleepOneSecond = () => {
+const sleep = (t) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(Math.random().toFixed(2));
-    }, 1000);
+    }, t);
   });
 };
 
 const ret = await async.parallel({
   a: async () => {
-    return await sleepOneSecond();
+    return await sleep(1000);
   },
   b: async () => {
-    return await sleepOneSecond();
+    return await sleep(1000);
   }
 });
 
