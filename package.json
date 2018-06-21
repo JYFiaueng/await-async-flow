@@ -1,6 +1,6 @@
 {
   "name": "await-async-flow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node await async flow",
   "main": "index.js",
   "scripts": {
